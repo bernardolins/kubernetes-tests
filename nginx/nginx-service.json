@@ -6,5 +6,16 @@
     "labels": {
       "app": "nginx" 
     }
+  },
+  "spec": {
+    "ports": [
+      {
+        "port": 80,
+        "targetPort": "http" 
+      } 
+    ],
+    "selector": {
+      "app": "nginx" 
+    } 
   }
 }
