@@ -8,6 +8,7 @@
     }
   },
   "spec": {
+    "type": "LoadBalancer",
     "ports": [
       {
         "port": 80,
@@ -16,6 +17,13 @@
     ],
     "selector": {
       "app": "nginx" 
-    } 
+    },
+    "status": {
+      "loadBalancer": {
+        "ingress": {
+          "ip": "146.164.41.8" 
+        } 
+      } 
+    }
   }
 }
