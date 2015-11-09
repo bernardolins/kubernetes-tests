@@ -1,0 +1,14 @@
+version: v1
+type: Service
+metadata:
+  name: mongo-service
+  labels:
+    app: mongodb
+    role: service
+spec:
+  type: LoadBalancer
+  ports:
+  - name: mongo 
+    port: 27017
+  selector:
+    app: mongodb    
