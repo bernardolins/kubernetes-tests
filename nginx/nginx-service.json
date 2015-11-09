@@ -21,9 +21,11 @@
   },
   "status": {
     "loadBalancer": {
-      "ingress": {
-        "ip": "146.164.41.8" 
-      } 
+      "ingress": [ 
+        {
+          "ip": "146.164.41.8" 
+        } 
+      ]
     } 
   }
 }
