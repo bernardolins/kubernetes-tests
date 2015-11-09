@@ -1,0 +1,17 @@
+version: v1
+type: Service
+metadata:
+  name: rocket.chat-service
+  labels:
+    app: rocket.chat
+    role: service
+spec:
+  type: LoadBalancer
+  deprecatedPublicIps:
+  - "146.164.41.7"
+  - "146.164.41.8"
+  ports:
+  - name: http
+    port: 80
+  selector:
+    app: rocket.chat    
