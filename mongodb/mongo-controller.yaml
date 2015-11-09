@@ -16,4 +16,4 @@ spec:
           image: mongo 
           ports:
           - name: mongo
-            containerPorts: 27017
+            containerPort: 27017
