@@ -1,19 +1,19 @@
 apiVersion: v1
 kind: ReplicationController
 metadata:
-  name: rocket.chat-controller
+  name: rocketchat-controller
   labels:
-    app: rocket.chat
+    app: rocketchat
     role: controller
 spec:
   replicas: 2
   template:
     metadata:
       labels:
-        app: rocket.chat
-    spec:
-      containers:
-        - name: rocket.chat
-          image: rocket.chat
-          ports:
-          - containerPorts: 3000
+       app: rocketchat
+      spec:
+        containers:
+          - name: rocketchat
+            image: rocket.chat
+            ports:
+            - containerPort: 3000
