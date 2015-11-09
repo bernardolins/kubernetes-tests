@@ -10,10 +10,10 @@ spec:
     metadata:
       labels:
         app: mongodb
-      spec:
-        containers:
-          - name: mongodb
-            image: mongo 
-            ports:
-            - name: mongo
-              containerPorts: 27017
+    spec:
+      containers:
+        - name: mongodb
+          image: mongo 
+          ports:
+          - name: mongo
+            containerPorts: 27017
