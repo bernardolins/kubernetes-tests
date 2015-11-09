@@ -1,5 +1,5 @@
-version: v1
-type: Service
+apiVersion: v1
+kind: Service
 metadata:
   name: mongo-service
   labels:

@@ -1,5 +1,5 @@
-version: v1
-type: ReplicationController
+apiVersion: v1
+kind: ReplicationController
 metadata:
   name: mongodb
   labels:
