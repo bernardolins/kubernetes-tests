@@ -11,9 +11,9 @@ spec:
     metadata:
       labels:
        app: rocketchat
-      spec:
-        containers:
-          - name: rocketchat
-            image: rocket.chat
-            ports:
-            - containerPort: 3000
+    spec:
+      containers:
+        - name: rocketchat
+          image: rocket.chat
+          ports:
+          - containerPort: 3000
