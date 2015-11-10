@@ -14,6 +14,9 @@ spec:
     spec:
       containers:
         - name: rocketchat
+          env:
+          - name: MONGO_URL
+            value: mongodb://mongo-service:27017/rocketchat
           image: rocket.chat
           ports:
-          - containerPort: 3000
+            - containerPort: 3000
