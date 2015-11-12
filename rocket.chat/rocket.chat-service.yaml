@@ -12,7 +12,7 @@ spec:
   - "146.164.41.8"
   ports:
   - name: http
-    port: 80
+    port: 8080
     targetPort: 3000
   selector:
     app: rocketchat    
