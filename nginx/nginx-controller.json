@@ -9,7 +9,7 @@
   },
 
   "spec": {
-    "replicas": 2,
+    "replicas": 1,
     "selector": {
       "app": "nginx" 
     },
@@ -23,7 +23,7 @@
         "containers": [
           {
             "name": "nginx",
-            "image": "nginx",
+            "image": "lci/nginx-sample",
             "ports": [
               {
                 "name": "http",

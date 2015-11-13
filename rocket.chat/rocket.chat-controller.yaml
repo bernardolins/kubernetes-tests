@@ -6,7 +6,7 @@ metadata:
     app: rocketchat
     role: controller
 spec:
-  replicas: 2
+  replicas: 1
   template:
     metadata:
       labels:
@@ -17,6 +17,8 @@ spec:
           env:
           - name: MONGO_URL
             value: mongodb://mongo-service:27017/rocketchat
+          - name: ROOT_URL
+            value: http://caxias.dcc.ufrj.br
           image: rocket.chat
           ports:
             - containerPort: 3000
